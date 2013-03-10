@@ -14,7 +14,7 @@ namespace Edition.Tabs
     /// <summary>
     /// 
     /// </summary>
-    [DefaultProperty("Text")]
+    
     [ToolboxData("<{0}:Tabs runat=server></{0}:Tabs>")]
     public class Tabs : WebControl, ITabsAccord
     {

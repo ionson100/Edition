@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edition", "Edition.csproj", "{04CBED42-CC7E-4536-A660-CAD3D763C2D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleEdition", "..\ExampleEdition\ExampleEdition.csproj", "{1AA603AF-9FBE-4085-8D28-BEA094C0420D}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -17,6 +19,10 @@ Global
 		{04CBED42-CC7E-4536-A660-CAD3D763C2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04CBED42-CC7E-4536-A660-CAD3D763C2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04CBED42-CC7E-4536-A660-CAD3D763C2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA603AF-9FBE-4085-8D28-BEA094C0420D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA603AF-9FBE-4085-8D28-BEA094C0420D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA603AF-9FBE-4085-8D28-BEA094C0420D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA603AF-9FBE-4085-8D28-BEA094C0420D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
