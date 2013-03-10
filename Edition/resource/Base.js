@@ -152,14 +152,14 @@ jQuery.fn.exists = function() { return this.length > 0; };
 
 
 function tynyUp(tb) {
-        tinyMCE_GZ.init({
+        window.tinyMCE_GZ.init({
             plugins: 'autolink,lists,pagebreak,style,layer,table,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,wordcount,advlist,filion',
             themes: 'advanced',
             languages: 'en',
             disk_cache: true,
             debug: false
         });
-        tinyMCE.init({
+        window.tinyMCE.init({
             mode: 'exact',
             elements: ''+tb+'' ,
             theme: "advanced", //simple
