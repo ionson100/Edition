@@ -1,0 +1,1 @@
+﻿$(function load#name#(){tynyUp('#name#');});

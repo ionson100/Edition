@@ -1,0 +1,1 @@
+﻿$(function(){$dialog = $('#editionmodal').dialog({autoOpen: false, title: '#titl#', dialogClass: 'alert', modal: true,buttons: [{ text: "#n#", click: function () { $(this).dialog("close"); } }, { text: "#y#", click: function () { $(this).dialog("close");#code# $("##form#").submit(); } }]});$('##button#').bind('click', function () {$dialog.dialog("open");  return false;});});

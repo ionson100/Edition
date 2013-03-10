@@ -1,0 +1,1 @@
+﻿$(function () {$("input:file").parents().each(function () { if ($(this).is($('form'))) {$(this).attr('enctype', 'multipart/form-data');}});});
