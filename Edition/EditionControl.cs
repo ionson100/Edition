@@ -784,14 +784,14 @@ namespace Edition
 
                                                                     using ( var b11 = new Button
                                                                     {
-                                                                        Text = @"Отмена",
+                                                                        Text = @"Cancel",
                                                                         CssClass = "buttonModalTinyMce",
                                                                         OnClientClick = string.Format("return cancelShowPanel('{0}')", er.PropertyName)
                                                                     })
                                                                     {
                                                                         using (var b12 = new Button
                                                                         {
-                                                                            Text = @"Сохранить",
+                                                                            Text = @"Save",
                                                                             CssClass = "buttonModalTinyMce",
                                                                             OnClientClick =
                                                                                 string.Format("return closePanel('{0}')", er.PropertyName)
