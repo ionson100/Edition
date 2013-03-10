@@ -21,7 +21,7 @@ namespace ExampleEdition.EditionBase
         Ddddddd = 3
     }
 
-    [ETypeShow(Edition.TypeShow.Tabs)]//Показывать табсом или аекордеоном
+    [ETypeShow(Edition.TypeShow.Accordion)]//Показывать табсом или аекордеоном
 
     public class Simpleleg : BaseHeel
     {

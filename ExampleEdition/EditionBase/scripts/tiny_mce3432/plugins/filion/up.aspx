@@ -267,7 +267,7 @@
             <tr>
                 <td style="height: 300px; width: 160px; padding-left: 5px;" valign="top">
                     <div class="Menu">
-                        Папка</div>
+                        Folder</div>
                     <asp:HyperLink runat="server" ID="lnkHome" BorderStyle="None" CssClass="Home">Home</asp:HyperLink>
                     <ul class="folderListUl">
                         <asp:ListView runat="server" ID="lvFolderList">
@@ -284,13 +284,13 @@
                     </ul>
                     <asp:Panel runat="server" ID="pnlCreators">
                         <div class="Menu">
-                            Создать папку</div>
+                            Create a folder</div>
                         <asp:TextBox ID="txtFolder" runat="server"></asp:TextBox><br />
                         <br />
                         <asp:Button runat="server" ID="btnCreateFolder" Text="Create Folder" OnClick="btnCreateFolder_click" />
                     </asp:Panel>
                     <div class="Menu">
-                        Загрузить</div>
+                        Download</div>
                     <asp:FileUpload ID="flUpload" runat="server" /><br />
                     <br />
                     <asp:Button runat="server" ID="btnAddFile" Text="Add File" OnClick="btnAddFile_click" />
