@@ -1,8 +1,106 @@
-﻿@{
+﻿@using Edition
+@using ExampleEdition.EditionBase
+
+@{
     ViewBag.Title = "Домашняя страница";
 }
 
-<h2>@ViewBag.Message</h2>
-<p>
-    Для получения дополнительных сведений о ASP.NET MVC посетите веб-сайт <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-</p>
+@section addon
+    {           
+     <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"   type="text/javascript"></script>
+                  
+                  <script src="http://cdn.jquerytools.org/1.2.7/jquery.tools.min.js"></script>
+                  <script src="http://yandex.st/jquery-ui/1.8.19/jquery-ui.min.js" type="text/javascript"></script>  
+                  <script src="http://yandex.st/jquery/cookie/1.0/jquery.cookie.min.js" type="text/javascript"></script>
+                  <script src="@Url.Content("~/EditionBase/scripts/tiny_mce3432/tiny_mce_gzip.js")" type="text/javascript"></script>
+                   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" rel="stylesheet" type="text/css" />
+                  <link href="@Url.Content("~/EditionBase/scripts/jqueryUI_Editor/EditionCss.css")" rel="stylesheet" type="text/css"></link>
+                   <script src="@Url.Content("~/EditionBase/scripts/jqueryUI_Editor/farbtastic/farbtastic.js")" type="text/javascript"></script>
+                  <link href="@Url.Content("~/EditionBase/scripts/jqueryUI_Editor/farbtastic/farbtastic.css")" rel="stylesheet" type="text/css" />
+                  <script src="@Url.Content("~/EditionBase/scripts/jqueryUI_Editor/jquery.json-2.3.min(1).js")" type="text/javascript"></script>
+                
+       
+          <script type="text/javascript">
+              jQuery(function () {
+
+                  jQuery('.field-validation-error').css("color", "#FF0000");
+                  jQuery('.input-validation-error').css("color", "#FF0000");
+
+              });
+              $(function () {
+                  $(':text').css('width', '180px');
+                  $(':password').css('width', '180px');
+                  $(':selected').css('width', '100px');
+
+
+              });
+
+
+
+              function ParseJSONEdition(objJSon) {
+                  $.each(objJSon, function (i, val) {
+                      if ($('#' + i + '').is('input') || $('#' + i + '').is('select') || $('#' + i + '').is('textarea')) {
+                          if ($('#' + i + '').is('[type =checkbox]') && val == true) {
+                              $('#' + i + '').attr('checked', 'checked');
+                          }
+                          $('#' + i + '').val(val);
+                      }
+                      else {
+                          $('#' + i + '').html(val);
+                      }
+                  });
+                  return this;
+              };
+
+
+              function Send() {
+                  $.ajax({
+                      url: "/",
+                      type: "POST",
+                      data: window.GetJSON(),
+                      error: function () {
+
+                      },
+                      complete: function (mes) {
+                          if (mes.statusText != 'Internal Server Error') {
+                              alert(mes.responseText);
+
+                              var obj = jQuery.parseJSON(mes.responseText);
+                              ParseJSONEdition(obj);
+                              alert("all complete");
+                          } else {
+                              $('#SaveAsPost').click();
+                          }
+
+                      }
+                  });
+              }
+
+
+              function renderict(id) {
+                  window.location.replace("/Home/Index/" + $(id).val());
+
+              }
+          </script>
+          
+}
+
+ @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "assa", enctype = "multipart/form-data" }))
+    {
+
+      
+
+      
+        <div>
+        @if (Session["simpleleg"] == null)
+        {
+            Session["simpleleg"] = new Simpleleg();
+        }
+       @Html.Edition(Session["simpleleg"], 800, 300)
+       </div>
+        <div style="text-align: right; padding :5px; width:90%">
+            <input id="SaveAsPost" type="submit" style="padding: 4px" value="SaveAsPost" />
+             <input id="SaveAsJson" type="submit" style="padding: 4px" value="SaveAsJson" onclick="Send(); return false;"/>
+        </div>
+    }
