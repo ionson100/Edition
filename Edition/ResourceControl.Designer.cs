@@ -69,7 +69,30 @@ namespace Edition {
             }
         }
         
-       
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 
+        ///
+        ///
+        ///
+        ///function submitValidateRegExp(obj, regs) {
+        ///
+        ///    if (!new RegExp(regs, &apos;g&apos;).test($(obj).val())) {
+        ///        $(obj).css(&apos;background-color&apos;, &apos;#FF0000&apos;);
+        ///        return 1;
+        ///    }
+        ///    else {
+        ///        return 0;
+        ///    }
+        ///}
+        ///function submitValidateIsEmpty(obj, isNull, strlength) {
+        ///    var str = $(obj).val();
+        ///    if (strlength &lt;= 0)
+        ///        strlength = 4000000000000000;
+        ///    if (str.length &gt; strlength) {
+        ///        alert(&apos;Big amount symbol!&apos;);
+        ///        $(obj).css(&apos;background-color&apos;, &apos;#FF0000&apos;);
+        ///        r [остаток строки не уместился]&quot;;.
+        /// </summary>
         internal static string Base {
             get {
                 return ResourceManager.GetString("Base", resourceCulture);
@@ -94,21 +117,68 @@ namespace Edition {
             }
         }
         
-       
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 
+        ///&lt;table style=&quot;width: 100px&quot;  &gt;
+        ///  &lt;tr&gt;
+        ///    &lt;td&gt;
+        ///   &lt;label class=&quot;editionlabel&quot;&gt; #titl#&lt;br/&gt;
+        ///        &lt;input id=&quot;#12#&quot; name=&quot;#12#&quot; type=&quot;text&quot; #json#  #hh# value=&quot;#date#&quot; /&gt;&lt;/label&gt; &lt;/td&gt;
+        ///    &lt;td style=&quot;vertical-align: bottom&quot; &gt;
+        ///        &lt;input id=&quot;#12#_bt&quot; class=&quot;buttonModalTinyMce&quot; type=&quot;button&quot;  value=&quot;...&quot; onclick=&quot;showDatepicker(&apos;#12#&apos;,&apos;#13#&apos;);return false;&quot; /&gt;&lt;/td&gt;
+        ///  &lt;/tr&gt;
+        ///  &lt;tr&gt;
+        ///    &lt;td colspan=&quot;2&quot;&gt;
+        ///        &lt;div id=&quot;#12#_div&quot; class=&quot;modalDatePitcker&quot; &gt;
+        ///        &lt;table style=&quot;width: 100px&quot; &gt;
+        /// [остаток строки не уместился]&quot;;.
+        /// </summary>
         internal static string datePicker {
             get {
                 return ResourceManager.GetString("datePicker", resourceCulture);
             }
         }
         
-       
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 
+        ///$($(function () {
+        ///    var obj = $.parseJSON(&apos;#str#&apos;);
+        ///    $.each(obj, function (i, val) {
+        ///
+        ///
+        ///
+        ///        if ($(&apos;#&apos; + i + &apos;&apos;).is(&apos;input&apos;) || $(&apos;#&apos; + i + &apos;&apos;).is(&apos;select&apos;) || $(&apos;#&apos; + i + &apos;&apos;).is(&apos;textarea&apos;)) {
+        ///
+        ///            if ($(&apos;#&apos; + i + &apos;&apos;).is(&apos;[type =checkbox]&apos;) &amp;&amp; val == true) {
+        ///                $(&apos;#&apos; + i + &apos;&apos;).attr(&apos;checked&apos;, &apos;checked&apos;);
+        ///            $(&apos;[type =hidden]&amp;&amp;[id = &apos; + i + &apos;]&apos;).remove();
+        ///
+        ///        }
+        ///        $(&apos;#&apos; + i + &apos;&apos;).val(val);
+        ///    }
+        ///    else {
+        ///            alert(i);
+        ///            $ [остаток строки не уместился]&quot;;.
+        /// </summary>
         internal static string loader {
             get {
                 return ResourceManager.GetString("loader", resourceCulture);
             }
         }
         
-        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на    &lt;div id=&quot;maska&quot; style=&quot;  display:none;    top: 0px; left: 0px;     z-index: 999;  background-color: #C0C0C0;  position: fixed;&quot;&gt;&lt;/div&gt;
+        ///       
+        ///      
+        ///      
+        ///     
+        ///      
+        ///         
+        ///         
+        ///          
+        ///    
+        ///.
+        /// </summary>
         internal static string maska {
             get {
                 return ResourceManager.GetString("maska", resourceCulture);
@@ -123,21 +193,50 @@ namespace Edition {
                 return ResourceManager.GetString("modalDialog", resourceCulture);
             }
         }
-     
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на $(function() {
+        ///    // $(&apos;form&apos;).submit( validateCore());
+        ///});.
+        /// </summary>
         internal static string submitValidate {
             get {
                 return ResourceManager.GetString("submitValidate", resourceCulture);
             }
         }
         
-     
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на $(function () {
+        ///    $(&quot;##acc#&quot;).tabs(
+        ///        { 
+        ///            cookie: { expires: 5 }, autoHeight: false, active: 0
+        ///        });
+        ///});
+        ///.
+        /// </summary>
         internal static string tabsCore {
             get {
                 return ResourceManager.GetString("tabsCore", resourceCulture);
             }
         }
         
-       
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 
+        ///
+        ///
+        ///        function tynyUp(tb){
+        ///
+        ///       try{
+        ///         tinyMCE_GZ.init({
+        ///        plugins : &apos;autolink,lists,pagebreak,style,layer,table,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,wordcount,advlist,filion&apos;,
+        ///        themes : &apos;simple,advanced&apos;,
+        ///        languages : &apos;ru&apos;,
+        ///        disk_cache : true,
+        ///        debug : false
+        ///});
+        ///
+        ///        tinyMCE.ini [остаток строки не уместился]&quot;;.
+        /// </summary>
         internal static string tinyMCE {
             get {
                 return ResourceManager.GetString("tinyMCE", resourceCulture);
@@ -153,7 +252,16 @@ namespace Edition {
             }
         }
         
-       
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на  function validateCore() {
+        ///
+        /// if( $(&apos;#IsValidate&apos;).length ){
+        ///   if($(&apos;#IsValidate&apos;).val()==&apos;False&apos;) return true;
+        /// }
+        /// var error1=0; var error2=0;  #validate# if(error1 &gt; 0||error2 &gt; 0)
+        ///  {
+        ///   alert(&apos;Error input..&apos;);if(error1 &gt; 0) {$(&apos;#error_1&apos;).css(&apos;display&apos;,&apos;block&apos;);   }if(error2&gt;0) {  $(&apos;#error_2&apos;).css(&apos;display&apos;,&apos;block&apos;); }return false;} $(&apos;#error_1&apos;).css(&apos;display&apos;,&apos;none&apos;); $(&apos;#error_2&apos;).css(&apos;display&apos;,&apos;none&apos;);  return true; }.
+        /// </summary>
         internal static string valudateCore {
             get {
                 return ResourceManager.GetString("valudateCore", resourceCulture);

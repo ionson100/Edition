@@ -384,7 +384,7 @@ namespace Edition
                         {
                             using (var page = new PageEditor())
                             {
-                                using (var con = page.LoadControl(er.UrlForControl))
+                                using (var con = page.LoadControl(er.UrlForControl))//////////////////////////////////////////////////////////////////////////////////////////
                                 {
                                     var dd = pr.GetValue(obj, null);
                                     ((IEdition)con).SetValue = dd;
