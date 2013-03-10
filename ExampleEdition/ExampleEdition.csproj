@@ -1688,6 +1688,7 @@
     <Content Include="EditionBase\scripts\jqueryUI_Editor\farbtastic\.DS_Store" />
     <Content Include="EditionBase\scripts\jqueryUI_Editor\farbtastic\Thumbs.db" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="ImagesEditors\asss\ion10012.jpg" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -1762,7 +1763,6 @@
     <Folder Include="EditionBase\scripts\tiny_mce3432\plugins\advlink\langs\.svn\tmp\props\" />
     <Folder Include="EditionBase\scripts\tiny_mce3432\plugins\advlink\langs\.svn\tmp\text-base\" />
     <Folder Include="ImageEditor\" />
-    <Folder Include="ImagesEditors\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
