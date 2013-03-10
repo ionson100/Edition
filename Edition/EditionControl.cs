@@ -21,7 +21,7 @@ using Image = System.Web.UI.WebControls.Image;
 namespace Edition
 {
   /// <summary>
-    /// Статический класс для расширений HtmlHelper
+    ///Static class for HtmlHelper extension
   /// </summary>
 
     public static partial  class EditionControl
@@ -31,15 +31,15 @@ namespace Edition
       internal const string RegExNumber = @"^\d+$";
 
         /// <summary>
-        /// Формат для показа  времени
+      /// The format for the time display
         /// </summary>
         public static string DateTimeFormat = "dd.MM.yyyy hh:mm:ss";
         /// <summary>
-        /// ID скрытого поля типа редактируемого объекта
+        /// ID hidden field type object being edited
         /// </summary>
         public  const string NameTypeField = "TypeModel_312312";
         /// <summary>
-        /// ID скрытого поля сборки редактируемого объекта
+        /// ID hidden field type object being edited
         /// </summary>
         public const string NameAcssemblyField = "AcssemblyModel_312312";
        
