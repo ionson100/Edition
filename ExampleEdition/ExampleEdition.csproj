@@ -1775,7 +1775,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Project4\Edition.csproj">
+    <ProjectReference Include="..\Edition\Edition.csproj">
       <Project>{04cbed42-cc7e-4536-a660-cad3d763c2d2}</Project>
       <Name>Edition</Name>
     </ProjectReference>
