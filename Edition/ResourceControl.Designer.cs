@@ -140,6 +140,24 @@ namespace Edition {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на No Double format...
+        /// </summary>
+        internal static string EditionControl_RenderTable_No_Double_format__ {
+            get {
+                return ResourceManager.GetString("EditionControl_RenderTable_No_Double_format__", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на No Number format...
+        /// </summary>
+        internal static string EditionControl_RenderTable_No_Number_format__ {
+            get {
+                return ResourceManager.GetString("EditionControl_RenderTable_No_Number_format__", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на 
         ///$($(function () {
         ///    var obj = $.parseJSON(&apos;#str#&apos;);

@@ -157,4 +157,10 @@
   <data name="updateModel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resource\updateModel.js;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="EditionControl_RenderTable_No_Double_format__" xml:space="preserve">
+    <value>No Double format..</value>
+  </data>
+  <data name="EditionControl_RenderTable_No_Number_format__" xml:space="preserve">
+    <value>No Number format..</value>
+  </data>
 </root>

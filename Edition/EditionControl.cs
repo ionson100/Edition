@@ -312,7 +312,7 @@ namespace Edition
                     if(item.BaseValidateMvc.RegularExpression==null)
                     {
                         item.BaseValidateMvc.RegularExpression =
-                        new RegularExpressionAttribute(RegExNumber) {ErrorMessage = @"No Number format.."};
+                        new RegularExpressionAttribute(RegExNumber) {ErrorMessage = ResourceControl.EditionControl_RenderTable_No_Number_format__};
 
                     }
                 }
@@ -326,7 +326,7 @@ namespace Edition
                     if (item.BaseValidateMvc.RegularExpression == null)
                     {
                         item.BaseValidateMvc.RegularExpression =
-                       new RegularExpressionAttribute(RegExDouble) { ErrorMessage = @"No Double format.." };
+                       new RegularExpressionAttribute(RegExDouble) { ErrorMessage = ResourceControl.EditionControl_RenderTable_No_Double_format__ };
                     }
                 }
 
